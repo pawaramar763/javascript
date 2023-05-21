@@ -61,3 +61,19 @@ function oddPositionedChars(valueOne) {
 
 oddPositionedChars("Hard work always pays back");
 oddPositionedChars("Soon I will be Angular IT Champ");
+
+console.log(
+  `===================================================================`
+);
+
+var givenString = "Everything happens for a Reason, So don't worry";
+console.log(`"${givenString}"`);
+var vowels = "aeiouAEIOU";
+var count = 0;
+for (let index = 0; index < givenString.length; index++) {
+  var char = givenString.charAt(index);
+  if (vowels.includes(char)) {
+    count++;
+  }
+}
+console.log(`Total number of Vowels : ${count}`);
