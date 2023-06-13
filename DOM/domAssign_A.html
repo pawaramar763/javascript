@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Details</title>
+</head>
+<body>
+
+    <h1 id="profile" >My Profile Details</h1>
+    
+
+    <h2 id="tech">Technoloy Stack</h2>
+    <ul class="list">
+        <li>HTML and CSS</li>
+        <li id="agile">Agile and JIRA</li>
+        <li>Angular or React</li>
+        <li>Oracle Database</li>
+    </ul>
+</div>
+    <h2>My Hobbies</h2>
+
+    <a href="https://www.google.com/" id="link">My Profile</a>
+    <p>Project Description</p>
+
+    <script>
+        elementProfile = document.querySelector(`#profile`);
+        elementProfile.style.color=`grey`;
+
+        let elementList = document.querySelector(`.list`)
+        let elementAgile=document.querySelector(`#agile`);
+        elementList.removeChild(elementAgile);
+
+        let elementTech = document.querySelector(`#tech`);
+        elementTech.style.color=`red`
+
+        let elemenetLink = document.querySelector(`#link`);
+        elemenetLink.setAttribute(`href`,`https://www.linkedin.com/login`)
+
+
+
+    </script>
+
+</body>
+</html>
